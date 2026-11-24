@@ -1,0 +1,5 @@
+effectiveness_rank,hero_alias,active_status,clearance_level,total_captures,total_threat_score,threat_share_pct,avg_response_days,avg_damage_index
+1,Spider-Man,Active,6,5,11,50.00,0.80,3.00
+2,Hulk,Active,9,1,4,18.18,1.00,5.00
+3,Doctor Strange,Active,9,1,4,18.18,2.00,5.00
+4,Captain America (Wilson),Active,9,1,3,13.64,2.00,1.00

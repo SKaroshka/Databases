@@ -1,4 +1,5 @@
-INSERT INTO heroes (name, description, class_role) VALUES
+INSERT INTO heroes (name, description, class_role) 
+VALUES
     ('Iron Man', 'Genius billionaire Tony Stark wearing a high-tech powered armor suit.', 'dps'),
     ('Thor', 'Asgardian god of thunder wielding the enchanted hammer Mjolnir and Stormbreaker.', 'dps'),
     ('Hulk', 'Scientist Bruce Banner who transforms into a giant green powerhouse when angered.', 'tankman'),

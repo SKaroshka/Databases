@@ -38,7 +38,10 @@ ORDER BY power DESC, h.id ASC;
  -- Загальна сила команд Месники і Гідра, найсильніша команда — остання
 SELECT t.name, COALESCE(SUM(hp.power_points), 0) AS power
 FROM teams t
-LEFT JOIN heroes_teams ht ON t.id = ht.team_id
+LEFT JOIN (
+    SELECT DISTINCT hero_id, team_id
+    FROM heroes_teams
+) ht ON t.id = ht.team_id
 LEFT JOIN heroes_powers hp ON ht.hero_id = hp.hero_id
 WHERE t.name IN ('Avengers', 'Hydra')
 GROUP BY t.id, t.name
